@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./SS_styles/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="top_left">
+        <img onclick="goToLink()" class="intro_img" src="./pics/Vector.png" alt="Logo" />
+      </div>
+      <div class="search_line">
+        <img
+          src="./pics/search_btn.png"
+          alt="Search Icon"
+          class="search_icon"
+        />
+        <input id="left" type="text" placeholder="Search events" />
+        <input type="text" value="Mountain View, CA" />
+        <button class="search_button">
+          <img src="./pics/Button - Search events.png" alt="Search" />
+        </button>
+      </div>
+      <div></div>
+      <div class="top_extras">
+        <div class="language">
+          <img src="./pics/globus.png" alt="Language" />
+          <p>English</p>
+        </div>
+        <p>Log in</p>
+        <button class="sign_up_btn">Sign up</button>
+      </div>
+    </header>
+
+    <!-- middle section with filters -->
+    <section class="middle">
+      <div class="all_middle">
+        <div class="main_left_side">
+          <div class="top_line">
+            <h3>Events near New York, NY</h3>
+            <p>Events</p>
+          </div>
+          <div class="filters">
+            <div class="container">
+              <div id="menu_open" class="filter_type"><p>Any type</p> <img src="./SVG.png" alt=""></a>
+              </div>
+              <nav class="elem_open">
+                <ul>
+                  <li onclick="filteredCategory('type', '')">any type</li>
+                  <li onclick="filteredCategory('type', 'online')">online</li>
+                  <li onclick="filteredCategory('type', 'offline')">offline</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="container">
+              <div id="menu_open" class="filter_distance"><p>Any distance</p> <img src="./SVG.png" alt="">
+              </div>
+              <nav class="elem_open">
+                <ul>
+                  <li onclick="filteredCategory('distance', '')">Any distance</li>
+                  <li onclick="filteredCategory('distance', '5')">5 km</li>
+                  <li onclick="filteredCategory('distance', '10')">10 km</li>
+                  <li onclick="filteredCategory('distance', '15')">15 km</li>
+                  <li onclick="filteredCategory('distance', '25')">25 km</li>
+                  <li onclick="filteredCategory('distance', '50')">50 km</li>
+                  <li onclick="filteredCategory('distance', '75')">75 km</li>
+                  <li onclick="filteredCategory('distance', '100')">100 km</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="container">
+              <div id="menu_open" class="filter_category"><p>Any category</p> <img src="./SVG.png" alt="">
+              </div>
+              <nav class="elem_open">
+                <ul> 
+                  <li onclick="filteredCategory('category', '')">Any category</li>
+                  <li onclick="filteredCategory('category', 'Social Activities')">Social Activities</li>
+                  <li onclick="filteredCategory('category', 'Hobbies and Passions')">Hobbies and Passions</li>
+                  <li onclick="filteredCategory('category', 'Health and Wellbeing')">Health and Wellbeing</li>
+                  <li onclick="filteredCategory('category', 'Business')">Business</li>
+                  <li onclick="filteredCategory('category', 'Technology')">Technology</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="container">
+              <div id="menu_open" class="filter_date"><p>Any date</p> <img src="./SVG.png" alt="">
+              </div>
+              <nav class="elem_open">
+                <ul>
+                  <li onclick="filteredCategory('date', '')">Any date</li>
+                  <li onclick="filteredCategory('date', '2024-03-13T11:00:00')">Mar 13, 11:00 AM</li>
+                  <li onclick="filteredCategory('date', '2024-03-14T11:00:00')">Mar 14, 11:00 AM</li>
+                  <li onclick="filteredCategory('date', '2024-03-14T20:00:00')">Mar 14, 8:00 PM</li>
+                  <li onclick="filteredCategory('date', '2024-03-16T14:00:00')">Mar 16, 2:00 PM</li>
+                  <li onclick="filteredCategory('date', '2024-03-23T11:30:00')">Mar 23, 11:30 AM</li>
+                  <li onclick="filteredCategory('date', '2024-03-30T14:00:00')">Mar 30, 2:00 PM</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <!-- контент -->
+          <div class="content"></div>
+        </div>
+        <!-- just text and picture. no js -->
+        <div class="side_with_map">
+          <p>Find events near</p>
+          <h3>New York, NY</h3>
+          <div class="map">
+            <img src="./mapPics/map-thumbnail.png.png" alt="">
+            <img class="mapBtn" src="./mapPics/Button.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="all">
+        <div class="top_footer">
+          <h3>Create your own Meetup group.</h3>
+          <button>Get Started</button>
+        </div>
+        <div class="footer_colomns">
+          <div class="colomn1">
+            <h3>Your Account</h3>
+            <p>Sign up</p>
+            <p>Log in</p>
+            <p>Help</p>
+            <p>Become an Affiliate</p>
+          </div>
+          <div class="colomn2">
+            <h3>Discover</h3>
+            <p>Groups</p>
+            <p>Calendar</p>
+            <p>Topics</p>
+            <p>Cities</p>
+            <p>Online Events</p>
+            <p>Local Guides</p>
+            <p>Make Friends</p>
+          </div>
+          <div class="colomn3">
+            <h3>Meetup</h3>
+            <p>About</p>
+            <p>Blog</p>
+            <p>Meetup Pro</p>
+            <p>Careers</p>
+            <p>Apps</p>
+            <p>Podcast</p>
+          </div>
+        </div>
+        <h3 class="follow">Follow us</h3>
+        <div class="follow_img">
+          <div class="left_side">
+            <img src="./footerPics/Vector (7).png" alt="">
+            <img src="./footerPics/Link - Meetup on Twitter → SVG.png" alt="">
+            <img src="./footerPics/Link - Meetup on YouTube → SVG.png" alt="">
+            <img src="./footerPics/Link - Instagram → SVG.png" alt="">
+            <img src="./footerPics/Link - TikTok → SVG.png" alt="">
+          </div>
+          <div class="right_side">
+            <img src="./footerPics/div.flex.png" alt="">
+          </div>
+        </div>
+        <div class="bottom_footer">
+          <h3>© 2024 Meetup</h3>
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
+          <p>Do Not Sell or Share My Personal Data</p>
+          <p>Cookie Policy</p>
+          <p>Help</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./script2.js"></script>
+  </body>
+</html>
